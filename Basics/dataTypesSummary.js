@@ -26,3 +26,26 @@ const myFunction = function(){
 }
 
 // console.log(typeof heros)
+
+//***************************
+
+//Stack(primitive), Heap(non-primitive)
+let myname = "Ayush"
+let myanothername = myname
+//console.log(myanothername)
+myanothername = "Utkarsh"
+console.log(myname)
+console.log(myanothername)
+
+
+// Stack(Primitive) => gives a copy
+let myuserOne = {
+     email: "fightayush@gmail.com",
+     upi: "8542968095@ybl"
+}
+let myuserTwo = myuserOne
+console.log(myuserTwo)
+myuserTwo.email = "ayushworksfr@gmail.com"
+console.log(myuserOne.email)
+console.log(myuserTwo.email)
+//Heap(Non-Primitive) => gives refrence
